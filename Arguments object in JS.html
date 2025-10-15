@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Arguments object in JS
+        </title>
+    </head>
+    <body>
+        <p id="result"></p>
+    <script>
+        function findMax(){
+            var i;
+            var max = 0;
+            for(i=0; i < arguments.length; i++){
+               if (arguments[i] > max){
+                max = arguments[i];
+               }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax(10,23,46,65,7890,43,21345,778903,44558,36325,23,63254,38786);
+    </script>
+    </body>
+</html>
